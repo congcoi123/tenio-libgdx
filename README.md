@@ -12,6 +12,7 @@ This is a client of [TenIO](https://github.com/TenMei/tenio) project base on [Li
 The [wiki](https://github.com/TenMei/tenio-libgdx/wiki) provides implementation level details and answers to general questions.
 
 ## Dependencies
+- msgpack
 - gdx
 - gdx-backend-lwjgl
 - gdx-freetype
@@ -28,7 +29,7 @@ git clone https://github.com/TenMei/tenio-libgdx
 ```
 
 ## Other clients
-- [TenIOCocos2dx](???)
+- [TenIOCocos2dx](https://github.com/TenMei/tenio-cocos2dx)
 
 ## Running
 Please start the server in example 4 before running this client. You start running the class below for your client-side:
