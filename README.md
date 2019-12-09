@@ -28,8 +28,9 @@ You can get the sources:
 git clone https://github.com/TenMei/tenio-libgdx
 ```
 
-## Other clients
+## Other Clients
 - [TenIOCocos2dx](https://github.com/TenMei/tenio-cocos2dx)
+- [TenIOJs](https://github.com/TenMei/tenio-js.git)
 
 ## Running
 Please start the server in example 4 before running this client. You start running the class below for your client-side:
