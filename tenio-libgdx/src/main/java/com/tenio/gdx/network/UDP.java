@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net;
+package com.tenio.gdx.network;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -33,8 +33,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import com.tenio.gdx.net.entities.TObject;
-import com.tenio.gdx.net.message.MsgPackConverter;
+import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.message.MsgPackConverter;
 
 /**
  * Create an object for handling a Datagram socket connection. It is used to

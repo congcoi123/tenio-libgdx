@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net;
+package com.tenio.gdx.network;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -33,9 +33,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import com.tenio.gdx.constants.Constants;
-import com.tenio.gdx.net.entities.TObject;
-import com.tenio.gdx.net.message.MessagePacker;
-import com.tenio.gdx.net.message.MsgPackConverter;
+import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.message.MessagePacker;
+import com.tenio.gdx.network.message.MsgPackConverter;
 
 /**
  * Create an object for handling a socket connection. It is used to send

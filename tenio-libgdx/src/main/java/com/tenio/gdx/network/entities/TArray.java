@@ -21,24 +21,56 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net;
+package com.tenio.gdx.network.entities;
 
-import com.tenio.gdx.net.entities.TObject;
+import java.util.ArrayList;
 
 /**
- * This interface helps you listen to all messages these came from the server's
- * TCP port.
+ * This is an element object in your server. You can use it for holding array
+ * data and make it serialize to send through the network.
  * 
  * @author kong
- *
+ * 
  */
-public interface ISocketListener {
+public final class TArray extends ArrayList<Object> {
 
-	/**
-	 * Listen for a new message
-	 * 
-	 * @param message the received message @see {@link TObject}
-	 */
-	void onReceivedTCP(TObject message);
+	private static final long serialVersionUID = -5100842875580575666L;
+
+	public TArray put(final Object e) {
+		add(e);
+		return this;
+	}
+
+	public double getDouble(final int index) {
+		return (double) get(index);
+	}
+
+	public float getFloat(final int index) {
+		return (float) get(index);
+	}
+
+	public long getLong(final int index) {
+		return (long) get(index);
+	}
+
+	public int getInt(final int index) {
+		return (int) get(index);
+	}
+
+	public boolean getBoolean(final int index) {
+		return (boolean) get(index);
+	}
+
+	public String getString(final int index) {
+		return (String) get(index);
+	}
+
+	public Object getObject(final int index) {
+		return get(index);
+	}
+
+	public TArray getTArray(final int index) {
+		return (TArray) get(index);
+	}
 
 }

@@ -21,9 +21,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net;
+package com.tenio.gdx.network;
 
-import com.tenio.gdx.net.entities.TObject;
+import com.tenio.gdx.network.entities.TObject;
 
 /**
  * This interface helps you listen to all messages these came from the server's
