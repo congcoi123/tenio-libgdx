@@ -23,7 +23,7 @@ THE SOFTWARE.
 */
 package com.tenio.gdx.constants;
 
-import com.tenio.gdx.net.message.pool.IElementPool;
+import com.tenio.gdx.network.message.pool.IElementPool;
 
 /**
  * All base constants' values for the server are defined here. This class should

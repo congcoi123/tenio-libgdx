@@ -33,12 +33,12 @@ import com.tenio.gdx.c2engine.asset.AssetManageable;
 import com.tenio.gdx.c2engine.asset.FramesGenerator;
 import com.tenio.gdx.c2engine.screens.XScreen;
 import com.tenio.gdx.c2engine.sprite.SpriteAnimation;
-import com.tenio.gdx.net.IDatagramListener;
-import com.tenio.gdx.net.ISocketListener;
-import com.tenio.gdx.net.TCP;
-import com.tenio.gdx.net.UDP;
-import com.tenio.gdx.net.entities.TArray;
-import com.tenio.gdx.net.entities.TObject;
+import com.tenio.gdx.network.IDatagramListener;
+import com.tenio.gdx.network.ISocketListener;
+import com.tenio.gdx.network.TCP;
+import com.tenio.gdx.network.UDP;
+import com.tenio.gdx.network.entities.TArray;
+import com.tenio.gdx.network.entities.TObject;
 
 /**
  * 

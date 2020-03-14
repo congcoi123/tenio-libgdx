@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net.message.pool;
+package com.tenio.gdx.network.message.pool;
 
 import com.tenio.gdx.constants.Constants;
 import com.tenio.gdx.exceptions.NullElementPoolException;

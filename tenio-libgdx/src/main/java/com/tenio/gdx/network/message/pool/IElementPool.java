@@ -21,56 +21,30 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net.entities;
-
-import java.util.ArrayList;
+package com.tenio.gdx.network.message.pool;
 
 /**
- * This is an element object in your server. You can use it for holding array
- * data and make it serialize to send through the network.
+ * In an application, you can have resources that are limited or time-consuming
+ * to create a new one. A solution is to create a limited resource once and
+ * reuse it. The object pool design will have the mechanism to create a bulk of
+ * objects to pooling use. If the requirements of resources increases, the
+ * current bulk's size will be also automatically increased.
  * 
  * @author kong
  * 
  */
-public final class TArray extends ArrayList<Object> {
+public interface IElementPool<Element> {
 
-	private static final long serialVersionUID = -5100842875580575666L;
+	/**
+	 * @return Returns an element in the pool
+	 */
+	Element get();
 
-	public TArray put(final Object e) {
-		add(e);
-		return this;
-	}
-
-	public double getDouble(final int index) {
-		return (double) get(index);
-	}
-
-	public float getFloat(final int index) {
-		return (float) get(index);
-	}
-
-	public long getLong(final int index) {
-		return (long) get(index);
-	}
-
-	public int getInt(final int index) {
-		return (int) get(index);
-	}
-
-	public boolean getBoolean(final int index) {
-		return (boolean) get(index);
-	}
-
-	public String getString(final int index) {
-		return (String) get(index);
-	}
-
-	public Object getObject(final int index) {
-		return get(index);
-	}
-
-	public TArray getTArray(final int index) {
-		return (TArray) get(index);
-	}
+	/**
+	 * When you finished using an element, repay (free) it for the reusing
+	 * 
+	 * @param element the finished using element
+	 */
+	void repay(Element element);
 
 }

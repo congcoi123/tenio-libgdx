@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net.message;
+package com.tenio.gdx.network.message;
 
 import static org.msgpack.template.Templates.TString;
 import static org.msgpack.template.Templates.TValue;
@@ -36,11 +36,11 @@ import org.msgpack.type.ArrayValue;
 import org.msgpack.type.Value;
 import org.msgpack.unpacker.Unpacker;
 
-import com.tenio.gdx.net.entities.TArray;
-import com.tenio.gdx.net.entities.TObject;
-import com.tenio.gdx.net.message.pool.ByteArrayInputStream;
-import com.tenio.gdx.net.message.pool.ByteArrayInputStreamPool;
-import com.tenio.gdx.net.message.pool.IElementPool;
+import com.tenio.gdx.network.entities.TArray;
+import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.message.pool.ByteArrayInputStream;
+import com.tenio.gdx.network.message.pool.ByteArrayInputStreamPool;
+import com.tenio.gdx.network.message.pool.IElementPool;
 
 /**
  * <a href="https://msgpack.org/index.html">MessagePack</a> is an efficient

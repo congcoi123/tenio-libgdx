@@ -21,30 +21,24 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.net.message.pool;
+package com.tenio.gdx.network;
+
+import com.tenio.gdx.network.entities.TObject;
 
 /**
- * In an application, you can have resources that are limited or time-consuming
- * to create a new one. A solution is to create a limited resource once and
- * reuse it. The object pool design will have the mechanism to create a bulk of
- * objects to pooling use. If the requirements of resources increases, the
- * current bulk's size will be also automatically increased.
+ * This interface helps you listen to all messages these came from the server's
+ * TCP port.
  * 
  * @author kong
- * 
+ *
  */
-public interface IElementPool<Element> {
+public interface ISocketListener {
 
 	/**
-	 * @return Returns an element in the pool
-	 */
-	Element get();
-
-	/**
-	 * When you finished using an element, repay (free) it for the reusing
+	 * Listen for a new message
 	 * 
-	 * @param element the finished using element
+	 * @param message the received message @see {@link TObject}
 	 */
-	void repay(Element element);
+	void onReceivedTCP(TObject message);
 
 }
