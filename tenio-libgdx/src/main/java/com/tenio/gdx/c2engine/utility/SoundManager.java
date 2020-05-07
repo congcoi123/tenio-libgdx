@@ -21,32 +21,46 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.client;
+package com.tenio.gdx.c2engine.utility;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.tenio.gdx.constants.Constants;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 
 /**
- * This class is a part of TenIO project. It's a testing client for the TenIO
- * example number 4. Furthermore, the detail can be seen in
- * <code>README.md</code> file.
+ * This class is used for simple sound management
  * 
  * @author kong
  *
  */
-public class TestClientMovement {
+public class SoundManager {
+	public static boolean SOUND_ENABLE = true;
+	public static boolean MUSIC_ENABLE = true;
 
-	/**
-	 * The entry point
-	 */
-	public static void main(String[] args) {
-		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-		cfg.title = "[TenIO] Movement Testing Example 4";
-		cfg.useGL20 = true;
-		cfg.width = Constants.GAME_WIDTH;
-		cfg.height = Constants.GAME_HEIGHT;
+	public static void playSound(Sound sound, float volume) {
+		if (SOUND_ENABLE) {
+			sound.play(volume);
+		}
+	}
 
-		new LwjglApplication(new Game(), cfg);
+	public static void playeSound(Sound sound) {
+		if (SOUND_ENABLE) {
+			sound.play();
+		}
+	}
+
+	public static void playMusic(Music music, float volume, boolean loop) {
+		if (MUSIC_ENABLE) {
+			music.setLooping(loop);
+			music.setVolume(volume);
+			music.play();
+		}
+	}
+
+	public static void pauseMusic(Music music) {
+		music.pause();
+	}
+
+	public static void stopSound(Sound sound) {
+		sound.stop();
 	}
 }

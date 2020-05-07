@@ -21,60 +21,56 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.network.entities;
+package com.tenio.gdx.network.entity;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 /**
- * This is an element object in your server. It can be used to hold your map
- * data. All message comes from a client will be converted to this object. That
- * helps us normalize the way to communicate and easy to use.
+ * This is an element object in your server. You can use it for holding array
+ * data and make it serialize to send through the network.
  * 
  * @author kong
  * 
  */
-public final class TObject extends HashMap<String, Object> {
+public final class TArray extends ArrayList<Object> {
 
-	private static final long serialVersionUID = 8818783476027583633L;
+	private static final long serialVersionUID = -5100842875580575666L;
 
-	public double getDouble(final String key) {
-		return (double) get(key);
+	public TArray put(final Object e) {
+		add(e);
+		return this;
 	}
 
-	public float getFloat(final String key) {
-		return (float) get(key);
+	public double getDouble(final int index) {
+		return (double) get(index);
 	}
 
-	public long getLong(final String key) {
-		return (long) get(key);
+	public float getFloat(final int index) {
+		return (float) get(index);
 	}
 
-	public int getInt(final String key) {
-		return (int) get(key);
+	public long getLong(final int index) {
+		return (long) get(index);
 	}
 
-	public boolean getBoolean(final String key) {
-		return (boolean) get(key);
+	public int getInt(final int index) {
+		return (int) get(index);
 	}
 
-	public String getString(final String key) {
-		return (String) get(key);
+	public boolean getBoolean(final int index) {
+		return (boolean) get(index);
 	}
 
-	public Object getObject(final String key) {
-		return get(key);
+	public String getString(final int index) {
+		return (String) get(index);
 	}
 
-	public TObject getTObject(final String key) {
-		return (TObject) get(key);
+	public Object getObject(final int index) {
+		return get(index);
 	}
 
-	public TArray getTArray(final String key) {
-		return (TArray) get(key);
-	}
-
-	public boolean contain(final String key) {
-		return containsKey(key);
+	public TArray getTArray(final int index) {
+		return (TArray) get(index);
 	}
 
 }

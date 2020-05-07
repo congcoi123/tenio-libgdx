@@ -21,46 +21,60 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.c2engine.utils;
+package com.tenio.gdx.network.entity;
 
-import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.audio.Sound;
+import java.util.HashMap;
 
 /**
- * This class is used for simple sound management
+ * This is an element object in your server. It can be used to hold your map
+ * data. All message comes from a client will be converted to this object. That
+ * helps us normalize the way to communicate and easy to use.
  * 
  * @author kong
- *
+ * 
  */
-public class SoundManager {
-	public static boolean SOUND_ENABLE = true;
-	public static boolean MUSIC_ENABLE = true;
+public final class TObject extends HashMap<String, Object> {
 
-	public static void playSound(Sound sound, float volume) {
-		if (SOUND_ENABLE) {
-			sound.play(volume);
-		}
+	private static final long serialVersionUID = 8818783476027583633L;
+
+	public double getDouble(final String key) {
+		return (double) get(key);
 	}
 
-	public static void playeSound(Sound sound) {
-		if (SOUND_ENABLE) {
-			sound.play();
-		}
+	public float getFloat(final String key) {
+		return (float) get(key);
 	}
 
-	public static void playMusic(Music music, float volume, boolean loop) {
-		if (MUSIC_ENABLE) {
-			music.setLooping(loop);
-			music.setVolume(volume);
-			music.play();
-		}
+	public long getLong(final String key) {
+		return (long) get(key);
 	}
 
-	public static void pauseMusic(Music music) {
-		music.pause();
+	public int getInt(final String key) {
+		return (int) get(key);
 	}
 
-	public static void stopSound(Sound sound) {
-		sound.stop();
+	public boolean getBoolean(final String key) {
+		return (boolean) get(key);
 	}
+
+	public String getString(final String key) {
+		return (String) get(key);
+	}
+
+	public Object getObject(final String key) {
+		return get(key);
+	}
+
+	public TObject getTObject(final String key) {
+		return (TObject) get(key);
+	}
+
+	public TArray getTArray(final String key) {
+		return (TArray) get(key);
+	}
+
+	public boolean contain(final String key) {
+		return containsKey(key);
+	}
+
 }

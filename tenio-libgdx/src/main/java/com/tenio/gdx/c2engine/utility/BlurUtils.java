@@ -1,4 +1,4 @@
-package com.tenio.gdx.c2engine.utils;
+package com.tenio.gdx.c2engine.utility;
 
 import java.nio.ByteBuffer;
 

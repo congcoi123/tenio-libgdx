@@ -23,8 +23,8 @@ THE SOFTWARE.
 */
 package com.tenio.gdx.network.message.pool;
 
-import com.tenio.gdx.constants.Constants;
-import com.tenio.gdx.exceptions.NullElementPoolException;
+import com.tenio.gdx.constant.Constants;
+import com.tenio.gdx.exception.NullElementPoolException;
 
 /**
  * @see {@link IElementPool}

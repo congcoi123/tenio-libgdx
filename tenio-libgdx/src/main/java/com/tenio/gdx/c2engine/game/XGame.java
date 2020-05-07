@@ -3,8 +3,8 @@ package com.tenio.gdx.c2engine.game;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.tenio.gdx.c2engine.screens.LoadingScreenAbstract;
-import com.tenio.gdx.c2engine.screens.XScreen;
+import com.tenio.gdx.c2engine.screen.LoadingScreenAbstract;
+import com.tenio.gdx.c2engine.screen.XScreen;
 
 /**
  * A wrapper class for game handler.

@@ -33,7 +33,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.entity.TObject;
 import com.tenio.gdx.network.message.MsgPackConverter;
 
 /**

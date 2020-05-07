@@ -23,7 +23,7 @@ THE SOFTWARE.
 */
 package com.tenio.gdx.network;
 
-import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.entity.TObject;
 
 /**
  * This interface helps you listen to all messages these came from the server's

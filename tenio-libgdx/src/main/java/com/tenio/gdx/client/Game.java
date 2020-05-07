@@ -25,7 +25,7 @@ package com.tenio.gdx.client;
 
 import com.badlogic.gdx.Screen;
 import com.tenio.gdx.c2engine.game.XGame;
-import com.tenio.gdx.c2engine.screens.LoadingScreenAbstract;
+import com.tenio.gdx.c2engine.screen.LoadingScreenAbstract;
 
 /**
  * 

@@ -24,7 +24,7 @@ THE SOFTWARE.
 package com.tenio.gdx.client;
 
 import com.tenio.gdx.c2engine.asset.ResourceManager;
-import com.tenio.gdx.c2engine.screens.LoadingScreenAbstract;
+import com.tenio.gdx.c2engine.screen.LoadingScreenAbstract;
 
 /**
  * 

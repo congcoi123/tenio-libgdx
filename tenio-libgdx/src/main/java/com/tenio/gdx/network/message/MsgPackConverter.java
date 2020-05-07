@@ -36,8 +36,8 @@ import org.msgpack.type.ArrayValue;
 import org.msgpack.type.Value;
 import org.msgpack.unpacker.Unpacker;
 
-import com.tenio.gdx.network.entities.TArray;
-import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.entity.TArray;
+import com.tenio.gdx.network.entity.TObject;
 import com.tenio.gdx.network.message.pool.ByteArrayInputStream;
 import com.tenio.gdx.network.message.pool.ByteArrayInputStreamPool;
 import com.tenio.gdx.network.message.pool.IElementPool;

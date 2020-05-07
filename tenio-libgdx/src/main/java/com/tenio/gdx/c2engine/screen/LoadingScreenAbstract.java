@@ -1,4 +1,4 @@
-package com.tenio.gdx.c2engine.screens;
+package com.tenio.gdx.c2engine.screen;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Screen;

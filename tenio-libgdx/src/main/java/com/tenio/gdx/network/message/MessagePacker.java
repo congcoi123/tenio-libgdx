@@ -26,7 +26,7 @@ package com.tenio.gdx.network.message;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import com.tenio.gdx.constants.Constants;
+import com.tenio.gdx.constant.Constants;
 
 /**
  * When sending a message through the Internet, it's necessary to convert one

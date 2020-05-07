@@ -31,8 +31,8 @@ import com.badlogic.gdx.utils.Array;
 import com.tenio.gdx.c2engine.asset.Asset;
 import com.tenio.gdx.c2engine.asset.AssetManageable;
 import com.tenio.gdx.c2engine.asset.ResourceManager;
-import com.tenio.gdx.c2engine.screens.XScreen;
-import com.tenio.gdx.constants.Constants;
+import com.tenio.gdx.c2engine.screen.XScreen;
+import com.tenio.gdx.constant.Constants;
 
 /**
  * 
