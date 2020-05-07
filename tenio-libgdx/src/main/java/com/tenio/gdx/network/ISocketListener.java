@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@ THE SOFTWARE.
 */
 package com.tenio.gdx.network;
 
-import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.entity.TObject;
 
 /**
  * This interface helps you listen to all messages these came from the server's

@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.network.entities;
+package com.tenio.gdx.network.entity;
 
 import java.util.HashMap;
 

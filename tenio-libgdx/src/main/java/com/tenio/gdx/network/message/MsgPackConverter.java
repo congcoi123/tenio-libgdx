@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +36,8 @@ import org.msgpack.type.ArrayValue;
 import org.msgpack.type.Value;
 import org.msgpack.unpacker.Unpacker;
 
-import com.tenio.gdx.network.entities.TArray;
-import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.entity.TArray;
+import com.tenio.gdx.network.entity.TObject;
 import com.tenio.gdx.network.message.pool.ByteArrayInputStream;
 import com.tenio.gdx.network.message.pool.ByteArrayInputStreamPool;
 import com.tenio.gdx.network.message.pool.IElementPool;

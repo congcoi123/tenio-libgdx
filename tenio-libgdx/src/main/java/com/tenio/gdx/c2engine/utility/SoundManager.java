@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,56 +21,46 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.network.entities;
+package com.tenio.gdx.c2engine.utility;
 
-import java.util.ArrayList;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 
 /**
- * This is an element object in your server. You can use it for holding array
- * data and make it serialize to send through the network.
+ * This class is used for simple sound management
  * 
  * @author kong
- * 
+ *
  */
-public final class TArray extends ArrayList<Object> {
+public class SoundManager {
+	public static boolean SOUND_ENABLE = true;
+	public static boolean MUSIC_ENABLE = true;
 
-	private static final long serialVersionUID = -5100842875580575666L;
-
-	public TArray put(final Object e) {
-		add(e);
-		return this;
+	public static void playSound(Sound sound, float volume) {
+		if (SOUND_ENABLE) {
+			sound.play(volume);
+		}
 	}
 
-	public double getDouble(final int index) {
-		return (double) get(index);
+	public static void playeSound(Sound sound) {
+		if (SOUND_ENABLE) {
+			sound.play();
+		}
 	}
 
-	public float getFloat(final int index) {
-		return (float) get(index);
+	public static void playMusic(Music music, float volume, boolean loop) {
+		if (MUSIC_ENABLE) {
+			music.setLooping(loop);
+			music.setVolume(volume);
+			music.play();
+		}
 	}
 
-	public long getLong(final int index) {
-		return (long) get(index);
+	public static void pauseMusic(Music music) {
+		music.pause();
 	}
 
-	public int getInt(final int index) {
-		return (int) get(index);
+	public static void stopSound(Sound sound) {
+		sound.stop();
 	}
-
-	public boolean getBoolean(final int index) {
-		return (boolean) get(index);
-	}
-
-	public String getString(final int index) {
-		return (String) get(index);
-	}
-
-	public Object getObject(final int index) {
-		return get(index);
-	}
-
-	public TArray getTArray(final int index) {
-		return (TArray) get(index);
-	}
-
 }

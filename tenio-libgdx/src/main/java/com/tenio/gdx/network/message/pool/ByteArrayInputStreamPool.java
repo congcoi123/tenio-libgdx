@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,8 +23,8 @@ THE SOFTWARE.
 */
 package com.tenio.gdx.network.message.pool;
 
-import com.tenio.gdx.constants.Constants;
-import com.tenio.gdx.exceptions.NullElementPoolException;
+import com.tenio.gdx.constant.Constants;
+import com.tenio.gdx.exception.NullElementPoolException;
 
 /**
  * @see {@link IElementPool}

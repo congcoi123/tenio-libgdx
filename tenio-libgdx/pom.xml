@@ -2,9 +2,47 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.tenserver</groupId>
+
+	<groupId>io.github.congcoi123</groupId>
 	<artifactId>tenio-libgdx</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>
+        TenIO is a java NIO (Non-blocking I/O) based server specifically designed for multiplayer games.
+        It supports UDP and TCP transports which are handled by Netty for high-speed network transmission.
+        It uses MsgPack for compressing data so that can be transferred quickly through the network.
+        This framework can help you quickly create a game server or integrate it into your system.
+    </description>
+	<url>https://github.com/congcoi123/tenio-libgdx</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://github.com/congcoi123/tenio-libgdx/blob/master/LICENSE</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Kong</name>
+			<email>congcoi123@gmail.com</email>
+			<organization>Kong</organization>
+			<organizationUrl>https://congcoi123.dev</organizationUrl>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<org.msgpack.version>0.6.12</org.msgpack.version>
+
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -21,7 +59,7 @@
 		<dependency>
 			<groupId>org.msgpack</groupId>
 			<artifactId>msgpack</artifactId>
-			<version>0.6.12</version>
+			<version>${org.msgpack.version}</version>
 		</dependency>
 	</dependencies>
 </project>

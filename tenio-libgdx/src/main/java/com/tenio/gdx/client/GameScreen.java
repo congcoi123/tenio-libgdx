@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -31,14 +31,14 @@ import com.badlogic.gdx.utils.Array;
 import com.tenio.gdx.c2engine.asset.Asset;
 import com.tenio.gdx.c2engine.asset.AssetManageable;
 import com.tenio.gdx.c2engine.asset.FramesGenerator;
-import com.tenio.gdx.c2engine.screens.XScreen;
+import com.tenio.gdx.c2engine.screen.XScreen;
 import com.tenio.gdx.c2engine.sprite.SpriteAnimation;
 import com.tenio.gdx.network.IDatagramListener;
 import com.tenio.gdx.network.ISocketListener;
 import com.tenio.gdx.network.TCP;
 import com.tenio.gdx.network.UDP;
-import com.tenio.gdx.network.entities.TArray;
-import com.tenio.gdx.network.entities.TObject;
+import com.tenio.gdx.network.entity.TArray;
+import com.tenio.gdx.network.entity.TObject;
 
 /**
  * 

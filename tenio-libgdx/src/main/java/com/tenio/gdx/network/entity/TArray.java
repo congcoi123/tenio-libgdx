@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2016-2019 kong <congcoi123@gmail.com>
+Copyright (c) 2016-2020 kong <congcoi123@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,32 +21,56 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package com.tenio.gdx.client;
+package com.tenio.gdx.network.entity;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.tenio.gdx.constants.Constants;
+import java.util.ArrayList;
 
 /**
- * This class is a part of TenIO project. It's a testing client for the TenIO
- * example number 4. Furthermore, the detail can be seen in
- * <code>README.md</code> file.
+ * This is an element object in your server. You can use it for holding array
+ * data and make it serialize to send through the network.
  * 
  * @author kong
- *
+ * 
  */
-public class TestClientMovement {
+public final class TArray extends ArrayList<Object> {
 
-	/**
-	 * The entry point
-	 */
-	public static void main(String[] args) {
-		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-		cfg.title = "[TenIO] Movement Testing Example 4";
-		cfg.useGL20 = true;
-		cfg.width = Constants.GAME_WIDTH;
-		cfg.height = Constants.GAME_HEIGHT;
+	private static final long serialVersionUID = -5100842875580575666L;
 
-		new LwjglApplication(new Game(), cfg);
+	public TArray put(final Object e) {
+		add(e);
+		return this;
 	}
+
+	public double getDouble(final int index) {
+		return (double) get(index);
+	}
+
+	public float getFloat(final int index) {
+		return (float) get(index);
+	}
+
+	public long getLong(final int index) {
+		return (long) get(index);
+	}
+
+	public int getInt(final int index) {
+		return (int) get(index);
+	}
+
+	public boolean getBoolean(final int index) {
+		return (boolean) get(index);
+	}
+
+	public String getString(final int index) {
+		return (String) get(index);
+	}
+
+	public Object getObject(final int index) {
+		return get(index);
+	}
+
+	public TArray getTArray(final int index) {
+		return (TArray) get(index);
+	}
+
 }
