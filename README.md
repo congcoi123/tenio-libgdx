@@ -29,7 +29,7 @@ This project is currently available under the [MIT](LICENSE) License.
 ## Installation
 You can get the sources:
 ```sh
-$ git clone https://github.com/congcoi123/tenio-libgdx
+$ git clone https://github.com/congcoi123/tenio-libgdx.git
 ```
 
 ## Contributing
