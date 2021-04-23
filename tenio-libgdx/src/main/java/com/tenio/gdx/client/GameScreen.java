@@ -103,14 +103,15 @@ public class GameScreen extends XScreen implements AssetManageable, ISocketListe
 	// networking
 	@Override
 	public void onReceivedUDP(TObject message) {
+		// System.err.println("Received UDP message -> " + message);
+		
 		TArray transform = message.getTArray("p");
-		TArray positionXs = transform.getTArray(1);
-		TArray positionYs = transform.getTArray(2);
+		int index = transform.getInt(0);
+		int positionX = transform.getInt(1);
+		int positionY = transform.getInt(2);
 
 		// a naive synchronous for testing ...
-		for (int i = 0; i < 100; i++) {
-			__spriteAnimations.get(i).setCenterXY(positionXs.getInt(i), 500 - positionYs.getInt(i));
-		}
+		__spriteAnimations.get(index).setCenterXY(positionX, 500 - positionY);
 
 	}
 

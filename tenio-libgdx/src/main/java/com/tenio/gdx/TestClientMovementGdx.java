@@ -36,7 +36,7 @@ import com.tenio.gdx.constant.Constants;
  * @author kong
  *
  */
-public class TestClientMovement {
+public class TestClientMovementGdx {
 
 	/**
 	 * The entry point
